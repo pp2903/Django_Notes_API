@@ -80,9 +80,9 @@ WSGI_APPLICATION = "mynotes.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+DATABASE_URL = "postgres://notesdb_8oxx_user:peRgJbSPYMMgn79Se1kTfrfqKZ6wNR4q@dpg-clev8lrl00ks739u8hi0-a.oregon-postgres.render.com/notesdb_8oxx"
 DATABASES = {
-   "default": dj_database_url.parse("postgres://notesdb_8oxx_user:peRgJbSPYMMgn79Se1kTfrfqKZ6wNR4q@dpg-clev8lrl00ks739u8hi0-a.oregon-postgres.render.com/notesdb_8oxx")
+   "default": dj_database_url.parse(DATABASE_URL)
 }
 
 # Password validation
