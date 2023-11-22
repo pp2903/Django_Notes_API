@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-crz=pc&a9p7l3hwt)@19vbsxo4c^p2(0dh!^#h+n9pm+$ji2bu"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -80,7 +80,7 @@ WSGI_APPLICATION = "mynotes.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-DATABASE_URL = "postgres://notesdb_8oxx_user:peRgJbSPYMMgn79Se1kTfrfqKZ6wNR4q@dpg-clev8lrl00ks739u8hi0-a.oregon-postgres.render.com/notesdb_8oxx"
+DATABASE_URL = "postgres://notesdb_8oxx_user:peRgJbSPYMMgn79Se1kTfrfqKZ6wNR4q@dpg-clev8lrl00ks739u8hi0-a/notesdb_8oxx"
 DATABASES = {
    "default": dj_database_url.parse(DATABASE_URL)
 }
